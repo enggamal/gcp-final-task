@@ -24,4 +24,23 @@ The hiararchy of the project as follows:
 
 ## deplyments and services on KGE
 
+python-deployment
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/python-dep-yaml.png)
+
+the nodeport service
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/node-port-service.png)
+
+the redis deployment 
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/redis-dep.png)
+
+the cluster ip dervice
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/cluster-ip.png)
+
+the load balancer service
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/lb-service.png)
 
