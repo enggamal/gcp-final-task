@@ -18,6 +18,30 @@ The hiararchy of the project as follows:
 ![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/python-app/python-app-web.png)
 
 ## the infrastracrure using terraform 
+  
+terraform output
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/terra-out.png)
+
+VM and Nodes
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/vm-nodes.png)
+
+Cluster 
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/k8s-cluster.png)
+
+Authorized Network 
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/authorized-network.png)
+
+the load balanser
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/load-balancer.png)
+
+app on browser
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/infrastructure-tf/app-on-browser.png)
 
 
 
