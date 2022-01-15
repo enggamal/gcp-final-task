@@ -44,3 +44,6 @@ the load balancer service
 
 ![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/lb-service.png)
 
+the app 0n web 
+
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/yaml-files/app-on-web.png)
