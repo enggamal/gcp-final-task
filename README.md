@@ -8,6 +8,12 @@ The hiararchy of the project as follows:
 5. deploy the images on GKE
 
 ## Python-web-app
-                                            the docker file 
+                      the docker file 
 ![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/python-app/dockerfile.png)
+
+                       the docker-compose file
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/python-app/docker-compose)
+             
+                       the image of app on browser 
+![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/python-app/python-app-web.png)
 
