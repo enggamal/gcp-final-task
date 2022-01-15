@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment                 # Type of Kubernetes resource
+metadata:
+  name: python-web           # Unique name of the Kubernetes resource
+spec:
+  replicas: 1                 # Number of pods to run at any given time
+  selector:
+    matchLabels:
+      app:     web          # This deployment applies to any Pods matching the specified label
+  template:                      # This deployment will create a set of pods using the configurations in this template
+    metadata:
+      labels:                    # The labels that will be applied to all of the pods in this deployment
+        app: web 
+    spec:
+      containers:
+      - name: web
+        image: gcr.io/mimetic-setup-319321/pyathen:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: ENVIRONMENT  
+          value: "DEV"
+        - name: HOST 
+          value: "localhost"
+        - name: PORT 
+          value: "8000"
+        - name: REDIS_HOST 
+          value: "redis-ser"
+        - name: REDIS_PORT 
+          value: "6379"
+        - name: REDIS_DB 
+          value: "0"
+        ports:
+          - containerPort: 8000  # Should match the port number that the Go application listens on    
+               
+
+---
+apiVersion: v1
+kind: Service                    # Type of kubernetes resource
+metadata:
+  name: app-service     # Unique name of the resource
+spec:
+  type: NodePort                 # Expose the Pods by opening a port on each Node and proxying it to the service.
+  ports:                         # Take incoming HTTP requests on port 9090 and forward them to the targetPort of 8080
+  - name: web
+    port: 8000
+    targetPort: 8000
+  selector:
+    app: web            # Map any pod with label `app=go-redis-app` to this service
