@@ -17,3 +17,11 @@ The hiararchy of the project as follows:
                        the image of app on browser 
 ![This is an image](https://github.com/enggamal/gcp-final-task/blob/main/python-app/python-app-web.png)
 
+## the infrastracrure using terraform 
+
+
+
+
+## deplyments and services on KGE
+
+
